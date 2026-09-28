@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 3 · Finish every section, never leave a blank</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../assets/quiz.js"></script>
+</head>
+<body>
+<nav class="crumbs">PreACT 9 coaching · <a href="../reference/study-plan.html">Study plan</a> · <a href="0002-soh-cah-toa.html">← Lesson 2</a> · <a href="0004-reading-trap-answers.html">Next: Reading trap answers →</a></nav>
+
+<h1>Finish every section, never leave a blank</h1>
+<p class="subtitle">Lesson 3 · pacing · about 8 minutes · fixes the collapse at the end of Reading and Science on the 9/13 PreACT</p>
+
+<div class="big-idea">
+  A blank is always wrong, and a guess sometimes isn't. Your student's score is a count of right answers, so <strong>every question is worth the same</strong>. The hard ones aren't worth more of his time than the easy ones at the end.
+</div>
+
+<p>ACT says it plainly in <a href="https://www.act.org/content/dam/act/unsecured/documents/Preparing-for-the-ACT-e.pdf"><em>Preparing for the ACT Test</em></a>: “Answer every question. Your scores in the sections will be based only on the number of questions that you answer correctly; there is no penalty for guessing.”</p>
+
+<h2>What happened on 9/13</h2>
+<p>The report says “Used all time allotted” in all four sections, and the last few questions show it. In Reading he missed all of Q29–33, on 13 to 56 seconds each. In Science he missed 3 of the last 5, two of them in under 20 seconds. He left Math Q9 blank after 8 seconds. Meanwhile, Reading Q16 got 2:40 and Q28 got 2:56. <strong>Those two questions alone used 5½ minutes, about what the last five needed.</strong> He didn't run out of ability. He ran out of time, because it went to a couple of questions early on.</p>
+
+<h2>The method</h2>
+<ol class="steps">
+  <li><strong>Know the budget before he starts.</strong> Minutes ÷ questions = average time per question (the table below). ACT recommends exactly this: “divide the total number of remaining minutes allowed by the number of questions” (<a href="https://www.act.org/content/act/en/products-and-services/preact/resources/preparing-for-preact9-secure.html">Preparing for PreACT 9 Secure</a>).</li>
+  <li><strong>Easy first.</strong> If a question looks long or strange, he skips it and comes back. In ACT's words: “answer the easy questions and skip the ones you find difficult.”</li>
+  <li><strong>The 2× cap: guess, flag, move on.</strong> Once he has spent about <em>twice</em> the average on one question, or if he has no idea how to start, he crosses out what he can, picks one, flags it, and goes on. Again from ACT: “it is a better strategy to guess, flag the question, and then move on to other questions that you know how to do.”</li>
+  <li><strong>Check the clock at halfway.</strong> At half the time he should be around the middle question. If he's behind, he speeds up <em>now</em>, not in the last two minutes.</li>
+  <li><strong>Never leave a blank.</strong> With a minute left, he answers everything that's still empty <em>first</em>, and only then goes back to a flagged one.</li>
+</ol>
+
+<h2>The budget, worked</h2>
+<div class="worked">
+  <div class="label">PreACT 9 Secure · section timings from act.org</div>
+  <table class="pairs">
+    <tr><th>Section</th><th>Questions</th><th>Minutes</th><th>Average</th><th>2× cap</th><th>Halfway check</th></tr>
+    <tr><td>English</td><td>44</td><td>35</td><td>~48 s</td><td>~1:35</td><td>min 17½ → Q22</td></tr>
+    <tr><td>Math</td><td>34</td><td>45</td><td>~1:20</td><td>~2:40</td><td>min 22½ → Q17</td></tr>
+    <tr><td>Reading</td><td>33</td><td>40</td><td>~1:15</td><td>~2:30</td><td>min 20 → Q17</td></tr>
+    <tr><td>Science</td><td>32</td><td>35</td><td>~1:05</td><td>~2:10</td><td>min 17½ → Q16</td></tr>
+  </table>
+  <p>Reading, for example: \(40 \times 60 = 2400\) seconds, and \(2400 \div 33 \approx 73\) seconds per question, including the time to read the passages. The cap is twice that, about \(2{:}30\). Reading Q16 (2:40) and Q28 (2:56) both went past it. The 2:24 on a Math ratio question was just under the Math cap, which is fine, as long as it doesn't happen twice. <em>Those</em> were the moments to guess and flag.</p>
+  <p class="side-note">These are averages, not rules for every question. Some take 20 seconds, which buys time for the ones that take two minutes. The cap is there to stop a single question from eating the time the last few need.</p>
+</div>
+
+<div class="callout">
+  <strong>What to watch for with your student.</strong> Guessing will feel like giving up to him, especially on a question he's “almost got”. Tell him a flag isn't a surrender, it's a bookmark: he picks his best answer now and comes back if there's time. On practice sections, sit with a timer and call out the halfway check. Afterwards, ask him two questions: “Which question did you spend the longest on?” and “Did you leave anything blank?”. The answer to the second one should always be no.
+</div>
+
+<h2>Your turn</h2>
+<p>Each one is a moment in a section. Use the table above.</p>
+<div id="quiz"></div>
+
+<script>
+mountQuiz(document.getElementById("quiz"), [
+  { q: String.raw`Reading, minute 21. Your student is on question 15 and has spent 2:40 on it. He's torn between two answers. What should he do?`,
+    choices: ["Reread the passage until he is sure", "Leave it blank and return to it later", "Pick the likelier one, flag it, move on"],
+    answer: 2,
+    why: String.raw`2:40 is past the Reading cap (~2:30). He has already narrowed it to two, so a guess is right half the time. Rereading feels responsible, and that's why it's tempting, but this is exactly how the last five Reading questions lost their time. A blank is always wrong, even if he means to come back.` },
+  { q: String.raw`Science has 32 questions in 35 minutes. About how long is the average per question?`,
+    choices: ["About 45 seconds", "About 65 seconds", "About 90 seconds", "About 110 seconds"],
+    answer: 1,
+    why: String.raw`\(35 \times 60 = 2100\) seconds, and \(2100 \div 32 \approx 66\) seconds. 45 seconds is tempting if you do \(32 \div 35\) or just think “under a minute”, but that's the wrong way up.` },
+  { q: String.raw`Reading is 40 minutes for 33 questions. At the 20-minute check, about where should your student be?`,
+    choices: ["Around question 8", "Around question 12", "Around question 17", "Around question 25"],
+    answer: 2,
+    why: String.raw`Half the time means half the questions: \(33 \div 2 \approx 17\). Question 12 is tempting because the first passage feels slow, but if he's that far behind at halfway, he needs to speed up now, not at minute 38.` },
+  { q: String.raw`Science, one minute left. Four questions are untouched. What should he do?`,
+    choices: ["Work the next one carefully, then stop", "Fill in all four, then try one properly", "Leave them blank to avoid a penalty"],
+    answer: 1,
+    why: String.raw`There is no penalty for guessing, so four blanks are four certain zeros. Bubbled in, four guesses among four choices each should land about one point. He fills them in first, and then any seconds left go to the one that looks easiest. Working one carefully is tempting, but the clock can end the section before he fills in the other three.` },
+  { q: String.raw`Math, minute 10. Your student reads question 9 and has no idea how to start. He's 8 seconds in. What now?`,
+    choices: ["Guess, flag it, go to question 10", "Leave it blank, come back to it later", "Keep trying different methods for two minutes"],
+    answer: 0,
+    why: String.raw`ACT's advice fits exactly: if you don't know how to work toward an answer, “guess, flag the question, and then move on.” Leaving it blank looks the same as flagging, but if time runs out, a blank scores nothing. That's what happened to his real Math Q9.` },
+  { q: String.raw`Reading, minute 30. Your student is on question 18, so 15 questions remain in 10 minutes. What's the plan?`,
+    choices: ["Keep the same careful pace as before", "Speed up and guess on the long ones", "Randomly bubble every remaining answer right now"],
+    answer: 1,
+    why: String.raw`He now has about \(600 \div 15 = 40\) seconds per question. He should answer the quick ones (a word in context, a detail with a line number) and guess on any that need rereading half the passage. Keeping the same pace means his last questions get no time at all, like 9/13. Bubbling randomly throws away the easy points he can still earn.` },
+  { q: String.raw`Math is 45 minutes for 34 questions. With the 2× cap, roughly when should your student guess, flag and move on from a stubborn question?`,
+    choices: ["Around 0:40 on it", "Around 1:20 on it", "Around 2:00 on it", "Around 2:40 on it"],
+    answer: 3,
+    why: String.raw`\(2700 \div 34 \approx 79\) seconds is the <em>average</em>, about 1:20, and that's the tempting answer. The cap is twice that, about 2:40. Plenty of questions take longer than average and are still worth finishing. The cap only catches the ones that are running away with his time.` },
+  { q: String.raw`English, question 30. It's a long “which sentence best adds to this paragraph?” question. Questions 31 to 33 look like quick comma fixes. What's the best order?`,
+    choices: ["Guess 30, flag it, do 31 to 33", "Work 30 to the end, then do 31", "Skip 30 blank, then do 31 to 33"],
+    answer: 0,
+    why: String.raw`Easy first. Three quick points are worth more than one slow one, and a guess on 30 protects him if he never gets back to it. Skipping it blank is tempting because it looks the same, until the clock runs out.` },
+]);
+</script>
+
+<footer class="next">
+  <p><strong>Read:</strong> <a href="https://www.act.org/content/dam/act/unsecured/documents/Preparing-for-the-ACT-e.pdf">ACT, <em>Preparing for the ACT Test</em> (2025–26)</a>, the general test-taking strategies near the front: pacing, answering every question, and guess-flag-move-on. For the PreACT 9 section timings, see <a href="https://www.act.org/content/act/en/products-and-services/preact/resources/preparing-for-preact9-secure.html">Preparing for PreACT 9 Secure</a>.</p>
+  <p><strong>Stuck or curious?</strong> Ask me anything, like “how do I get your student to actually let go of a question?” or “what does a good timed practice session look like?”. I'm your teacher here.</p>
+  <p>Next: <a href="0004-reading-trap-answers.html">Lesson 4 · Reading trap answers →</a></p>
+</footer>
+</body>
+</html>

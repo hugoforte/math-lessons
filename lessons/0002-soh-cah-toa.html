@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 2 · SOH CAH TOA, and when to divide</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../assets/quiz.js"></script>
+</head>
+<body>
+<nav class="crumbs">PreACT 9 coaching · <a href="../reference/study-plan.html">Study plan</a> · <a href="0001-the-missing-letter-rule.html">← Lesson 1</a> · <a href="../reference/triangles-cheat-sheet.html">Cheat sheet</a></nav>
+
+<h1>SOH CAH TOA, and when to divide</h1>
+<p class="subtitle">Lesson 2 · right-triangle word problems · about 8 minutes · fixes Version 3, questions 5 and 11</p>
+
+<div class="big-idea">
+  Every one of these problems comes down to two decisions: <strong>which ratio</strong> (set by the two sides involved) and <strong>multiply or divide</strong> (set by where the unknown lands).
+</div>
+
+<p>The ratios, from <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book:_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05:_Trigonometric_Functions_of_Angles/5.05:_Right_Triangle_Trigonometry">Lippman &amp; Rasmussen §5.5</a>:</p>
+<p>\[\textbf{S}\text{in}=\frac{\textbf{O}\text{pposite}}{\textbf{H}\text{ypotenuse}}\qquad \textbf{C}\text{os}=\frac{\textbf{A}\text{djacent}}{\textbf{H}\text{ypotenuse}}\qquad \textbf{T}\text{an}=\frac{\textbf{O}\text{pposite}}{\textbf{A}\text{djacent}}\]</p>
+
+<h2>The method</h2>
+<ol class="steps">
+  <li><strong>Find the angle</strong> you were given (never the \(90°\) one).</li>
+  <li><strong>Label the sides from that angle:</strong>
+    <span class="hyp">H</span> is across from the right angle (the longest, slanted side).
+    <span class="opp">O</span> is across from your angle (the <a href="0001-the-missing-letter-rule.html">missing-letter rule</a> again).
+    <span class="adj">A</span> touches your angle and isn't H.</li>
+  <li><strong>Pick the ratio</strong> from the two sides in play, the one you <em>know</em> and the one you <em>want</em>: O+H → sin, A+H → cos, O+A → tan.</li>
+  <li><strong>Write it and solve.</strong> Unknown on <em>top</em> → multiply. Unknown on <em>bottom</em> → divide.</li>
+  <li><strong>Sanity check:</strong> the hypotenuse must be the longest side.</li>
+</ol>
+
+<h2>Question 5, worked (the ramp)</h2>
+<div class="worked">
+  <div class="label">Version 3 · Q5</div>
+  <p>A ramp rises to a doorway \(3\) ft high and makes a \(5°\) angle with the ground. How long is the ramp?</p>
+  <figure>
+    <svg viewBox="0 0 500 190" width="460" role="img" aria-label="Ramp triangle: 5 degree angle at left, height 3 on right is opposite, ramp is hypotenuse, ground is adjacent">
+      <line x1="30" y1="160" x2="400" y2="160" stroke="#1d4ed8" stroke-width="4"/>
+      <line x1="400" y1="160" x2="400" y2="40" stroke="#c2410c" stroke-width="4"/>
+      <line x1="30" y1="160" x2="400" y2="40" stroke="#15803d" stroke-width="4"/>
+      <polyline points="386,160 386,146 400,146" fill="none" stroke="#555" stroke-width="1.5"/>
+      <g font-family="Palatino, Georgia, serif" font-size="18">
+        <text x="80" y="153">5°</text>
+        <text x="408" y="105" fill="#c2410c">O = 3</text>
+        <text x="40" y="80" fill="#15803d">H = ramp = L ?</text>
+        <text x="190" y="183" fill="#1d4ed8">A</text>
+      </g>
+    </svg>
+    <figcaption>Know <span class="opp">O</span>, want <span class="hyp">H</span> → sine.</figcaption>
+  </figure>
+  <p>\[\sin5°=\frac{3}{L}\]</p>
+  <p>The unknown \(L\) is on the <strong>bottom</strong>. Multiply both sides by \(L\), then divide by \(\sin5°\):</p>
+  <p>\[L\sin5°=3\quad\Rightarrow\quad L=\frac{3}{\sin5°}\]</p>
+  <p><strong>Sanity check:</strong> \(\sin\) of any angle is less than 1, so \(3\sin5°\) is <em>less than 3</em>. A ramp shorter than its own height is impossible, which rules out that answer immediately. (For comparison, the textbook's Example 3 does the same move: \(\sin30°=\frac{7}{b}\Rightarrow b=\frac{7}{\sin30°}=14\).)</p>
+</div>
+
+<h2>Question 11, worked (the ladder)</h2>
+<div class="worked">
+  <div class="label">Version 3 · Q11</div>
+  <p>A \(20\)-ft ladder makes a \(70°\) angle with the ground. How far is its base from the wall?</p>
+  <figure>
+    <svg viewBox="0 0 300 250" width="260" role="img" aria-label="Ladder triangle: 70 degree angle at base, ladder is hypotenuse 20, ground distance is adjacent, wall height is opposite">
+      <line x1="80" y1="220" x2="160" y2="220" stroke="#1d4ed8" stroke-width="4"/>
+      <line x1="160" y1="220" x2="160" y2="20" stroke="#c2410c" stroke-width="4"/>
+      <line x1="80" y1="220" x2="160" y2="20" stroke="#15803d" stroke-width="4"/>
+      <line x1="160" y1="10" x2="160" y2="235" stroke="#999" stroke-width="1" stroke-dasharray="4 4"/>
+      <polyline points="146,220 146,206 160,206" fill="none" stroke="#555" stroke-width="1.5"/>
+      <g font-family="Palatino, Georgia, serif" font-size="18">
+        <text x="92" y="212">70°</text>
+        <text x="20" y="120" fill="#15803d">H = 20</text>
+        <text x="100" y="242" fill="#1d4ed8">A = d ?</text>
+        <text x="168" y="120" fill="#c2410c">O (wall)</text>
+      </g>
+    </svg>
+    <figcaption>Know <span class="hyp">H</span>, want <span class="adj">A</span> → cosine.</figcaption>
+  </figure>
+  <p>\[\cos70°=\frac{d}{20}\]</p>
+  <p>The unknown \(d\) is on <strong>top</strong>, so multiply: \(d=20\cos70°\).</p>
+  <p>The tempting wrong answer is \(20\sin70°\). That's the <em>height up the wall</em>, the side across from the \(70°\) angle, not the side touching it.</p>
+</div>
+
+<div class="callout">
+  <strong>What to watch for with your student.</strong> Make him label <span class="hyp">H</span>, <span class="opp">O</span>, <span class="adj">A</span> on a sketch <em>before</em> writing sin, cos or tan. Most wrong answers come from choosing a ratio by feel. Then ask one question: "is the unknown on the top or the bottom?"
+</div>
+
+<h2>Your turn</h2>
+<p>Sketch and label each one on paper first. The last question is a review of Lesson 1.</p>
+<div id="quiz"></div>
+
+<script>
+mountQuiz(document.getElementById("quiz"), [
+  { q: String.raw`A ladder leans against a wall, making angle \(\theta\) with the ground. Relative to \(\theta\), the ladder itself is the…`,
+    choices: ["hypotenuse", "opposite", "adjacent"],
+    answer: 0,
+    why: String.raw`The ladder is across from the right angle (where wall meets ground), so it's always the hypotenuse.` },
+  { q: String.raw`Same ladder. Relative to \(\theta\), the height up the wall to the top of the ladder is the…`,
+    choices: ["hypotenuse", "opposite", "adjacent"],
+    answer: 1,
+    why: String.raw`The wall is across from \(\theta\), which sits at the ladder's foot. The ground distance is the adjacent side.` },
+  { q: String.raw`A kite string is \(80\) ft long and makes a \(35°\) angle with the ground. How high is the kite?`,
+    choices: [String.raw`\(80\cos35°\)`, String.raw`\(80\sin35°\)`, String.raw`\(80\tan35°\)`, String.raw`\(\frac{80}{\sin35°}\)`],
+    answer: 1,
+    why: String.raw`Know H (the string), want O (the height) → sin. \(\sin35°=\frac{h}{80}\); unknown on top → \(h=80\sin35°\).` },
+  { q: String.raw`A flagpole casts a \(24\)-ft shadow when the sun is \(52°\) above the horizon. How tall is the pole?`,
+    choices: [String.raw`\(24\sin52°\)`, String.raw`\(24\cos52°\)`, String.raw`\(24\tan52°\)`, String.raw`\(\frac{24}{\tan52°}\)`],
+    answer: 2,
+    why: String.raw`The shadow on the ground touches the \(52°\) angle, so it's A. The pole is O. O+A → tan. \(\tan52°=\frac{h}{24}\Rightarrow h=24\tan52°\).` },
+  { q: String.raw`The top of a slide is \(6\) ft above the ground, and the slide makes a \(30°\) angle with the ground. How long is the slide?`,
+    choices: [String.raw`\(6\sin30°\)`, String.raw`\(6\tan30°\)`, String.raw`\(\frac{6}{\tan30°}\)`, String.raw`\(\frac{6}{\sin30°}\)`],
+    answer: 3,
+    why: String.raw`Know O (6 ft high), want H (the slide) → sin. \(\sin30°=\frac{6}{L}\): unknown on the <strong>bottom</strong>, so divide: \(L=\frac{6}{\sin30°}\). Check: \(\sin30°=\frac12\), so \(L=12\), which is longer than 6. ✓ (Same shape as the ramp.)` },
+  { q: String.raw`A ramp is \(15\) ft long and makes an \(8°\) angle with the ground. How far does it reach along the ground?`,
+    choices: [String.raw`\(15\cos8°\)`, String.raw`\(15\sin8°\)`, String.raw`\(15\tan8°\)`, String.raw`\(\frac{15}{\cos8°}\)`],
+    answer: 0,
+    why: String.raw`Know H (ramp), want A (ground, touching the angle) → cos. Unknown on top → \(15\cos8°\). (Same shape as the ladder.)` },
+  { q: String.raw`A boat is \(50\) m from the base of a cliff. The angle of elevation from the boat to the top of the cliff is \(25°\). What is the straight-line distance from the boat to the top of the cliff?`,
+    choices: [String.raw`\(50\cos25°\)`, String.raw`\(\frac{50}{\cos25°}\)`, String.raw`\(50\tan25°\)`, String.raw`\(\frac{50}{\sin25°}\)`],
+    answer: 1,
+    why: String.raw`The 50 m on the water touches the angle (A), and the line of sight is H. A+H → cos. \(\cos25°=\frac{50}{s}\): unknown on the bottom → \(s=\frac{50}{\cos25°}\). \(50\cos25°\) would be shorter than 50, which is impossible for a hypotenuse.` },
+  { q: String.raw`Review (Lesson 1): in \(\triangle PQR\), \(PQ=10\), \(QR=6\), \(PR=13\). Which angle is the smallest?`,
+    choices: [String.raw`\(\angle P\)`, String.raw`\(\angle Q\)`, String.raw`\(\angle R\)`],
+    answer: 0,
+    why: String.raw`The shortest side is \(QR=6\). It's missing \(P\), so \(\angle P\) is smallest.` },
+]);
+</script>
+
+<footer class="next">
+  <p><strong>Read:</strong> <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book:_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05:_Trigonometric_Functions_of_Angles/5.05:_Right_Triangle_Trigonometry">Lippman &amp; Rasmussen, §5.5 Right Triangle Trigonometry</a>, the definitions box and Examples 1–3. It's a free, peer-used open textbook.</p>
+  <p><strong>Stuck or curious?</strong> Ask me anything, like "why does sin stay below 1?" or "how would I explain adjacent vs opposite to your student?". I'm your teacher here.</p>
+  <p>Keep handy: <a href="../reference/triangles-cheat-sheet.html">the one-page cheat sheet</a> (it prints on a single page).</p>
+  <p>Next: <a href="0003-finish-every-section.html">Lesson 3 · Finish every section →</a> · <a href="../reference/study-plan.html">Study plan</a></p>
+</footer>
+</body>
+</html>

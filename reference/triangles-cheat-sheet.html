@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheat sheet · Triangle sides, angles &amp; SOH CAH TOA</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]})"></script>
+<style>
+  body { font-size: 17px; }
+  h2 { margin-top: 26px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 640px) { .cols { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav class="crumbs">PreACT 9 coaching · <a href="../lessons/0001-the-missing-letter-rule.html">Lesson 1</a> · <a href="../lessons/0002-soh-cah-toa.html">Lesson 2</a></nav>
+<h1>Triangles cheat sheet</h1>
+<p class="subtitle">Side/angle ordering and SOH CAH TOA, on one page</p>
+
+<div class="cols">
+<section>
+<h2>1 · Ordering sides &amp; angles</h2>
+<div class="big-idea">Bigger side ↔ bigger angle <em>across</em> from it.</div>
+<p><strong>Across from = missing letter.</strong> Side \(YZ\) has no \(X\), so it's across from \(\angle X\).</p>
+<ol class="steps">
+  <li>Match each side to its missing letter.</li>
+  <li>Rank what you're given. Only two angles? Third \(=180°-\text{the other two}\).</li>
+  <li>Carry the ranking across.</li>
+</ol>
+<p class="side-note">Example: \(XY=12,\ YZ=8,\ XZ=17\) → \(\angle X<\angle Z<\angle Y\).<br>
+\(\angle D=48°,\ \angle E=75°\) → \(\angle F=57°\) → \(EF<DE<DF\).</p>
+<p class="side-note">Trap: pairing an angle with a side that <em>touches</em> it.</p>
+</section>
+
+<section>
+<h2>2 · SOH CAH TOA</h2>
+<p>\[\sin=\frac{O}{H}\quad\cos=\frac{A}{H}\quad\tan=\frac{O}{A}\]</p>
+<ol class="steps">
+  <li>Find the given angle (not the \(90°\)).</li>
+  <li>Label: <span class="hyp">H</span> across from the \(90°\); <span class="opp">O</span> across from the angle; <span class="adj">A</span> touches the angle.</li>
+  <li>Know + want: O&amp;H → sin · A&amp;H → cos · O&amp;A → tan.</li>
+  <li>Unknown on <strong>top</strong> → multiply. On <strong>bottom</strong> → divide.</li>
+  <li>Check: H is the longest side.</li>
+</ol>
+<p class="side-note">Ramp: know O = 3, want H → \(\sin5°=\frac{3}{L}\) → \(L=\frac{3}{\sin5°}\).<br>
+Ladder: know H = 20, want A → \(\cos70°=\frac{d}{20}\) → \(d=20\cos70°\).</p>
+<p class="side-note">Trap: \(3\sin5°\) is smaller than 3, so it can't be a hypotenuse.</p>
+</section>
+</div>
+
+<p class="side-note" style="margin-top:30px">Sources: <a href="https://www.mathopenref.com/trianglesideangle.html">Math Open Reference</a> · <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book:_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05:_Trigonometric_Functions_of_Angles/5.05:_Right_Triangle_Trigonometry">Lippman &amp; Rasmussen §5.5</a></p>
+</body>
+</html>

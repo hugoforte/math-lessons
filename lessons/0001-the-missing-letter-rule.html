@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 1 · The missing-letter rule</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../assets/quiz.js"></script>
+</head>
+<body>
+<nav class="crumbs">PreACT 9 coaching · <a href="../reference/study-plan.html">Study plan</a> · <a href="../reference/triangles-cheat-sheet.html">Cheat sheet</a> · <a href="0002-soh-cah-toa.html">Next: SOH CAH TOA →</a></nav>
+
+<h1>The missing-letter rule</h1>
+<p class="subtitle">Lesson 1 · ordering a triangle's sides and angles · about 5 minutes · fixes Version 3, questions 2 and 8</p>
+
+<div class="big-idea">
+  The bigger the side, the bigger the angle <em>across from it</em>. The side across from an angle is the one whose name does <strong>not</strong> contain that angle's letter.
+</div>
+
+<p>That's the whole rule (<a href="https://www.mathopenref.com/trianglesideangle.html">Math Open Reference</a>: "the shortest side is always opposite the smallest interior angle; the longest side is always opposite the largest"). Your student's mistakes almost always come from the <em>matching</em>, not the rule. Kids tend to pair an angle with a side that <em>touches</em> it. The missing-letter trick removes that guesswork.</p>
+
+<h2>The method</h2>
+<ol class="steps">
+  <li><strong>Match.</strong> Next to each side, write the letter its name is missing. \(YZ\) is missing \(X\), so \(YZ\) is across from \(\angle X\).</li>
+  <li><strong>Rank.</strong> Order whichever you were given, sides or angles. (Given only two angles? The three angles add to \(180°\), so find the third first.)</li>
+  <li><strong>Carry over.</strong> The ranking transfers straight across: shortest side ↔ smallest angle, and so on.</li>
+</ol>
+
+<h2>Question 2, worked</h2>
+<div class="worked">
+  <div class="label">Version 3 · Q2</div>
+  <p>In \(\triangle XYZ\), \(XY=12\), \(YZ=8\), \(XZ=17\). List the angles from least to greatest.</p>
+  <figure>
+    <svg viewBox="0 0 420 260" width="400" role="img" aria-label="Triangle XYZ, each side coloured the same as the angle across from it">
+      <line x1="40" y1="220" x2="380" y2="220" stroke="#c2410c" stroke-width="4"/>
+      <line x1="40" y1="220" x2="300" y2="70" stroke="#1d4ed8" stroke-width="4"/>
+      <line x1="300" y1="70" x2="380" y2="220" stroke="#15803d" stroke-width="4"/>
+      <g font-family="Palatino, Georgia, serif" font-size="20">
+        <text x="18" y="238" fill="#15803d" font-weight="bold">X</text>
+        <text x="296" y="58" fill="#c2410c" font-weight="bold">Y</text>
+        <text x="388" y="238" fill="#1d4ed8" font-weight="bold">Z</text>
+        <text x="200" y="248" fill="#c2410c">17</text>
+        <text x="150" y="132" fill="#1d4ed8">12</text>
+        <text x="350" y="140" fill="#15803d">8</text>
+      </g>
+    </svg>
+    <figcaption>Each side is coloured the same as the angle across from it. Not to scale.</figcaption>
+  </figure>
+  <table class="pairs">
+    <tr><th>Side</th><th>Missing letter</th><th>Rank</th></tr>
+    <tr><td>\(YZ=8\)</td><td>\(\angle X\)</td><td>least</td></tr>
+    <tr><td>\(XY=12\)</td><td>\(\angle Z\)</td><td>middle</td></tr>
+    <tr><td>\(XZ=17\)</td><td>\(\angle Y\)</td><td>greatest</td></tr>
+  </table>
+  <p>Answer: \(\angle X,\ \angle Z,\ \angle Y\).</p>
+</div>
+
+<h2>Question 8, worked (the other direction)</h2>
+<div class="worked">
+  <div class="label">Version 3 · Q8</div>
+  <p>In \(\triangle DEF\), \(m\angle D=48°\) and \(m\angle E=75°\). List the sides from shortest to longest.</p>
+  <p><strong>Rank first, and don't skip the hidden third angle:</strong> \(\angle F=180°-48°-75°=57°\). So \(D\ (48°) < F\ (57°) < E\ (75°)\).</p>
+  <table class="pairs">
+    <tr><th>Angle</th><th>Side without that letter</th><th>Rank</th></tr>
+    <tr><td>\(\angle D=48°\)</td><td>\(EF\)</td><td>shortest</td></tr>
+    <tr><td>\(\angle F=57°\)</td><td>\(DE\)</td><td>middle</td></tr>
+    <tr><td>\(\angle E=75°\)</td><td>\(DF\)</td><td>longest</td></tr>
+  </table>
+  <p>Answer: \(EF,\ DE,\ DF\).</p>
+</div>
+
+<div class="callout">
+  <strong>What to watch for with your student.</strong> Ask him "which side is across from \(\angle Y\)?" If he points at a side that <em>touches</em> \(Y\), that's the bug. Have him cover the letter \(Y\) with a finger and read the two letters that are left.
+</div>
+
+<h2>Your turn</h2>
+<p>Do each one on paper <em>before</em> clicking. The effort of recalling is what makes it stick.</p>
+<div id="quiz"></div>
+
+<script>
+mountQuiz(document.getElementById("quiz"), [
+  { q: String.raw`In \(\triangle ABC\), which side is opposite \(\angle B\)?`,
+    choices: [String.raw`\(AB\)`, String.raw`\(BC\)`, String.raw`\(AC\)`],
+    answer: 2,
+    why: String.raw`Cover up \(B\): the side without it is \(AC\).` },
+  { q: String.raw`In \(\triangle KLM\), \(KL=5\), \(LM=9\), \(KM=7\). Which angle is the largest?`,
+    choices: [String.raw`\(\angle K\)`, String.raw`\(\angle L\)`, String.raw`\(\angle M\)`],
+    answer: 0,
+    why: String.raw`The longest side is \(LM=9\). It's missing \(K\), so \(\angle K\) is largest.` },
+  { q: String.raw`Same triangle (\(KL=5\), \(LM=9\), \(KM=7\)). List the angles from least to greatest.`,
+    choices: [String.raw`\(\angle M,\ \angle L,\ \angle K\)`, String.raw`\(\angle K,\ \angle L,\ \angle M\)`, String.raw`\(\angle L,\ \angle M,\ \angle K\)`, String.raw`\(\angle M,\ \angle K,\ \angle L\)`],
+    answer: 0,
+    why: String.raw`\(KL=5\to\angle M\), \(KM=7\to\angle L\), \(LM=9\to\angle K\). Smallest to largest: \(\angle M,\ \angle L,\ \angle K\).` },
+  { q: String.raw`In \(\triangle RST\), \(m\angle R=40°\) and \(m\angle S=65°\). Which side is the longest?`,
+    choices: [String.raw`\(RS\)`, String.raw`\(ST\)`, String.raw`\(RT\)`],
+    answer: 0,
+    why: String.raw`The hidden angle is \(\angle T=180°-40°-65°=75°\), the largest. The side without \(T\) is \(RS\). (If you said \(RT\), you were matching to \(\angle S\), the largest angle you were <em>given</em>. Always find the third angle.)` },
+  { q: String.raw`Same triangle (\(\angle R=40°\), \(\angle S=65°\)). List the sides from shortest to longest.`,
+    choices: [String.raw`\(ST,\ RT,\ RS\)`, String.raw`\(RS,\ RT,\ ST\)`, String.raw`\(ST,\ RS,\ RT\)`, String.raw`\(RT,\ ST,\ RS\)`],
+    answer: 0,
+    why: String.raw`\(\angle R=40°\to ST\), \(\angle S=65°\to RT\), \(\angle T=75°\to RS\).` },
+  { q: String.raw`\(\triangle ABC\) has a right angle at \(C\). Which side must be the longest?`,
+    choices: [String.raw`\(AC\)`, String.raw`\(BC\)`, String.raw`\(AB\)`],
+    answer: 2,
+    why: String.raw`The \(90°\) angle is the largest angle in a right triangle, so the side across from it, \(AB\) (no \(C\)), is longest. That side is the <strong>hypotenuse</strong>, which is where <a href="0002-soh-cah-toa.html">Lesson 2</a> starts.` },
+]);
+</script>
+
+<footer class="next">
+  <p><strong>Read or watch:</strong> <a href="https://www.mathopenref.com/trianglesideangle.html">Math Open Reference: side lengths and angles</a>. Drag the corners and watch the rule hold. It's a good 2-minute demo to do <em>with</em> your student.</p>
+  <p><strong>Stuck or curious?</strong> Ask me anything about this lesson, like "why is the rule true?" or "how do I explain this without the colours?". I'm your teacher here.</p>
+  <p>Next: <a href="0002-soh-cah-toa.html">Lesson 2 · SOH CAH TOA, and when to divide →</a></p>
+</footer>
+</body>
+</html>
