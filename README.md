@@ -11,6 +11,7 @@ Start with the **[study plan](reference/study-plan.html)**. It ranks the lessons
 3. [Science: read the data exactly](lessons/0005-science-read-the-data-exactly.html): the right row, the right units and the passage's own definitions
 4. [English: four grammar rules](lessons/0006-english-four-grammar-rules.html): subject–verb agreement, commas before names, dash pairs, semicolons
    - Follow-up: [Extra info comes in pairs](lessons/0009-extra-info-comes-in-pairs.html): titles before names, comma pairs around descriptions, closing a dash
+   - Follow-up: [Who, which, that](lessons/0010-who-which-that.html): when a who/which clause gets commas, and why *that* never does
 5. [Science: conflicting viewpoints](lessons/0007-science-conflicting-viewpoints.html): one line per student before answering
 6. [English: what's the question's job?](lessons/0008-english-whats-the-questions-job.html): add/delete, conclusions, transitions, sentence placement
 
