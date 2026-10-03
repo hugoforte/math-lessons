@@ -52,7 +52,7 @@ mountTest(document.getElementById("test"), [
     stem: String.raw`<p>What is the sum of the polynomials \(-7x^{2}+4x-6\) and \(5x^{2}+2x+9\)?</p>`,
     choices: [String.raw`\(-2x^{2}+6x+3\)`, String.raw`\(-2x^{2}+6x+15\)`, String.raw`\(2x^{2}+2x+3\)`, String.raw`\(2x^{2}+6x+3\)`],
     explain: String.raw`<p>Add like terms: \(x^2\) terms \(-7+5=-2\); \(x\) terms \(4+2=6\); constants \(-6+9=3\). The sum is \(-2x^{2}+6x+3\).</p>
-      <p>B drops the minus sign on the \(-6\). C and D lose the minus sign on \(-7x^2\).</p>` },
+      <p>B drops the minus sign on the \(-6\). C and D get the sign of the \(x^2\) term wrong: \(-7+5\) is \(-2\), not \(2\). C also subtracts the \(x\) terms.</p>` },
 
   { skill: "Congruent figures", key: "A",
     stem: String.raw`<p>Quadrilaterals \(FGHJ\) and \(KLMN\) are congruent such that \(FGHJ\cong KLMN\). The length of \(\overline{GH}\) must be equal to the length of which of the following line segments?</p>`,
@@ -156,7 +156,7 @@ mountTest(document.getElementById("test"), [
     choices: [String.raw`\(2.1\)`, String.raw`\(5.5\)`, String.raw`\(10.4\)`, String.raw`\(40.6\)`],
     explain: String.raw`<p>First find the shared mass. Density = mass ÷ volume, so mass = density × volume = \(2.7\times 15.0=40.5\) g.</p>
       <p>Tin volume = mass ÷ density = \(40.5\div 7.3\approx 5.548\), which rounds to \(5.5\) cm³. A sense check: tin is denser, so the same mass takes up <em>less</em> room than 15.</p>
-      <p>A divides the volume, not the mass, by 7.3. C subtracts the densities. D multiplies by the ratio upside down.</p>` },
+      <p>A divides the volume, not the mass, by 7.3. C subtracts the difference between the densities from the volume. D multiplies by the ratio upside down.</p>` },
 
   { skill: "Angles and parallel lines", key: "C",
     stem: String.raw`<p>In the figure below, transversal \(\overleftrightarrow{EF}\) intersects parallel lines \(\overleftrightarrow{AB}\) and \(\overleftrightarrow{CD}\) at \(P\) and \(Q\), such that \(m\angle DQE=65^\circ\) and \(m\angle BPF=(6x-5)^\circ\). What is the value of \(x\)?</p>
