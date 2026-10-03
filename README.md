@@ -19,6 +19,7 @@ Start with the **[study plan](reference/study-plan.html)**. It ranks the lessons
 
 - [The missing-letter rule](lessons/0001-the-missing-letter-rule.html): putting a triangle's sides and angles in order
 - [SOH CAH TOA, and when to divide](lessons/0002-soh-cah-toa.html): choosing sin, cos or tan, and whether to multiply or divide
+- [Math practice test](lessons/0011-math-practice-test.html): a full 34-question, 45-minute section with the same skills in the same order as ACT's free PreACT 9 practice form, with new numbers, a pacing timer and results by skill
 
 ## Reference
 

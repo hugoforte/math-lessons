@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 11 · PreACT 9 Math practice test (34 questions)</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../assets/quiz.js"></script>
+<script src="../assets/test.js"></script>
+</head>
+<body>
+<nav class="crumbs">PreACT 9 coaching · <a href="../reference/study-plan.html">Study plan</a> · <a href="0010-who-which-that.html">← Lesson 10</a> · <a href="0003-finish-every-section.html">Pacing: Lesson 3 →</a></nav>
+
+<h1>Math practice test: 34 questions</h1>
+<p class="subtitle">Lesson 11 · a full-length PreACT 9 Math test · 45 minutes · calculator allowed</p>
+
+<div class="big-idea">
+  The same 34 skills, in the same order, as ACT's free PreACT 9 Secure Math practice test, with new numbers and new contexts. Take it under real time, then use the results table to see which skills need work.
+</div>
+
+<p>ACT's own PreACT 9 Secure Math section is 34 questions in 45 minutes, about 80 seconds a question (<a href="https://www.act.org/content/act/en/products-and-services/preact/resources/preparing-for-preact9-secure.html">ACT, Preparing for PreACT 9 Secure</a>). Every question here was written to match one question on ACT's untimed practice form: the same skill, form and difficulty, but none of its numbers. That makes it a good second attempt after the official practice test, or a first one if you'd rather save the official one for later.</p>
+
+<h2>How to take it</h2>
+<ol class="steps">
+  <li><strong>Start the timer</strong> (the button at the bottom). It counts up to 45:00 and shows two checkpoints: question 12 by 15:00 and question 23 by 30:00. If you're behind at a checkpoint, guess on anything that's taking too long and move on (<a href="0003-finish-every-section.html">Lesson 3</a>).</li>
+  <li><strong>Answer every question.</strong> There's no penalty for guessing, so a blank is always worse than a guess.</li>
+  <li><strong>Use the work space</strong> under each question, or scrap paper. A calculator is allowed, just as on the real test, but most questions go faster without one.</li>
+  <li><strong>Check answers</strong> when you're done. Each question then shows the answer and a worked explanation, and a table at the bottom groups your results by skill. When time ran out, the timer noted how many questions you'd answered, so you can see whether pacing cost you points.</li>
+</ol>
+<p class="side-note">Printing gives a clean paper copy without answers or explanations. Unless a question says otherwise, figures are not necessarily drawn to scale, they lie in a plane, "line" means a straight line, and "average" means the arithmetic mean.</p>
+
+<div id="test"></div>
+
+<script>
+mountTest(document.getElementById("test"), [
+  { skill: "Writing equations", key: "D",
+    stem: String.raw`<p>A family spent a total of \(\$38\) at a movie theater. They bought \(4\) tickets that all had the same price and spent \(\$6\) on popcorn. There were no other expenses. In which of the following equations does \(x\) represent the price, in dollars, of \(1\) ticket?</p>`,
+    choices: [String.raw`\(4x=38\)`, String.raw`\(10x=38\)`, String.raw`\(6x+4=38\)`, String.raw`\(4x+6=38\)`],
+    explain: String.raw`<p>Four tickets cost \(4x\). Add the popcorn: \(4x+6\). That's the whole bill, so \(4x+6=38\) (each ticket is \(\$8\)).</p>
+      <p>A forgets the popcorn. B adds the 4 and the 6 as if both were tickets. C swaps the roles: it buys 6 tickets and spends \(\$4\) on popcorn.</p>` },
+
+  { skill: "Probability", key: "D",
+    stem: String.raw`<p>Each marble in a jar is either red or blue. One marble will be chosen at random. The probability that the marble will be red is \(37\%\). What is the probability that the marble will be blue?</p>`,
+    choices: [String.raw`\(13\%\)`, String.raw`\(37\%\)`, String.raw`\(50\%\)`, String.raw`\(63\%\)`],
+    explain: String.raw`<p>Every marble is red or blue, so the two probabilities add to \(100\%\): \(100\%-37\%=63\%\).</p>
+      <p>C assumes two colors means a 50–50 split. A subtracts from 50 instead of 100.</p>` },
+
+  { skill: "Polynomials", key: "A",
+    stem: String.raw`<p>What is the sum of the polynomials \(-7x^{2}+4x-6\) and \(5x^{2}+2x+9\)?</p>`,
+    choices: [String.raw`\(-2x^{2}+6x+3\)`, String.raw`\(-2x^{2}+6x+15\)`, String.raw`\(2x^{2}+2x+3\)`, String.raw`\(2x^{2}+6x+3\)`],
+    explain: String.raw`<p>Add like terms: \(x^2\) terms \(-7+5=-2\); \(x\) terms \(4+2=6\); constants \(-6+9=3\). The sum is \(-2x^{2}+6x+3\).</p>
+      <p>B drops the minus sign on the \(-6\). C and D lose the minus sign on \(-7x^2\).</p>` },
+
+  { skill: "Congruent figures", key: "A",
+    stem: String.raw`<p>Quadrilaterals \(FGHJ\) and \(KLMN\) are congruent such that \(FGHJ\cong KLMN\). The length of \(\overline{GH}\) must be equal to the length of which of the following line segments?</p>`,
+    choices: [String.raw`\(\overline{LM}\)`, String.raw`\(\overline{FG}\)`, String.raw`\(\overline{KN}\)`, String.raw`\(\overline{MN}\)`],
+    explain: String.raw`<p>In a congruence statement the letters match up in order: \(F\to K\), \(G\to L\), \(H\to M\), \(J\to N\). So \(\overline{GH}\) matches \(\overline{LM}\).</p>
+      <p>B is a side of the same figure. D shifts one letter too far.</p>` },
+
+  { skill: "Fractions and decimals", key: "D",
+    stem: String.raw`<p>What is the decimal form of \(\frac{47}{90}\)?</p>`,
+    choices: [String.raw`\(0.\overline{47}\)`, String.raw`\(0.4\overline{7}\)`, String.raw`\(0.\overline{52}\)`, String.raw`\(0.5\overline{2}\)`],
+    explain: String.raw`<p>Divide: \(47\div 90=0.52222\ldots\). Only the 2 repeats, so it's \(0.5\overline{2}\).</p>
+      <p>A is \(\frac{47}{99}\): over 99, both digits repeat, but over 90 they don't. A quick estimate also works: \(\frac{47}{90}\) is a bit more than \(\frac{45}{90}=0.5\), which rules out A and B.</p>` },
+
+  { skill: "Rates and proportions", key: "C",
+    stem: String.raw`<p>At a school store, \(8\) notebooks, each the same price, cost a total of \(\$36\). At the same store, a binder costs \(3\) times as much as a notebook. How much do \(4\) binders cost?</p>`,
+    choices: [String.raw`\(\$13.50\)`, String.raw`\(\$18.00\)`, String.raw`\(\$54.00\)`, String.raw`\(\$108.00\)`],
+    explain: String.raw`<p>One notebook: \(36\div 8=\$4.50\). One binder: \(3\times 4.50=\$13.50\). Four binders: \(4\times 13.50=\$54.00\).</p>
+      <p>A stops at one binder. B is the price of 4 notebooks. D triples the whole \(\$36\).</p>` },
+
+  { skill: "Probability", key: "A",
+    stem: String.raw`<p>All \(40\) students on a team were asked to name their favorite sport to watch. Of these students, \(9\) chose soccer, \(5\) chose tennis, \(14\) chose basketball, and \(12\) chose swimming. What is the probability that a randomly selected student from this team chose soccer or tennis?</p>`,
+    choices: [String.raw`\(\frac{7}{20}\)`, String.raw`\(\frac{7}{13}\)`, String.raw`\(\frac{23}{40}\)`, String.raw`\(\frac{9}{14}\)`],
+    explain: String.raw`<p>"Soccer or tennis" is \(9+5=14\) students out of all \(40\): \(\frac{14}{40}=\frac{7}{20}\).</p>
+      <p>B compares the 14 to the other 26 students instead of to all 40. C adds soccer and basketball. D is the share of soccer fans among the 14.</p>` },
+
+  { skill: "Exponents", key: "A",
+    stem: String.raw`<p>\(\left(\frac{16}{81}\right)^{\frac{3}{4}}=\,?\)</p>`,
+    choices: [String.raw`\(\frac{8}{27}\)`, String.raw`\(\frac{4}{9}\)`, String.raw`\(\frac{2}{3}\)`, String.raw`\(\frac{27}{8}\)`],
+    explain: String.raw`<p>An exponent of \(\frac{3}{4}\) means "fourth root, then cube". \(\sqrt[4]{16}=2\) and \(\sqrt[4]{81}=3\), so the fourth root is \(\frac{2}{3}\), and \(\left(\frac{2}{3}\right)^3=\frac{8}{27}\).</p>
+      <p>C stops after the root. B squares instead of cubing. D flips the fraction, which is what a negative exponent would do.</p>` },
+
+  { skill: "Coordinate geometry", key: "B",
+    stem: String.raw`<p>A quadrilateral in the standard \((x,y)\) coordinate plane has vertices at \((1,-2)\), \((1,5)\), \((6,5)\), and \((9,-2)\). How many right angles does the quadrilateral have?</p>`,
+    choices: [String.raw`\(1\)`, String.raw`\(2\)`, String.raw`\(3\)`, String.raw`\(4\)`],
+    explain: String.raw`<p>Sketch it. The left side, from \((1,-2)\) to \((1,5)\), is vertical. The top, from \((1,5)\) to \((6,5)\), and the bottom, from \((1,-2)\) to \((9,-2)\), are horizontal. So the two left corners are right angles.</p>
+      <p>The right side, from \((6,5)\) to \((9,-2)\), slants, so neither right corner is \(90^\circ\). Answer: 2 right angles.</p>` },
+
+  { skill: "Graphing inequalities", key: "B", grid: true,
+    stem: String.raw`<p>One of the following is the graph of \(y>2x+1\) in the standard \((x,y)\) coordinate plane. Which one?</p>`,
+    choices: [`<img src="figures/0011-q10a.svg" alt="Graph A">`, `<img src="figures/0011-q10b.svg" alt="Graph B">`, `<img src="figures/0011-q10c.svg" alt="Graph C">`, `<img src="figures/0011-q10d.svg" alt="Graph D">`],
+    explain: String.raw`<p>Check three things. <strong>Line:</strong> \(y=2x+1\) crosses the \(y\)-axis at \(1\) and rises 2 for every 1 across. That rules out C (falling line) and D (crosses at \(-1\)). <strong>Dashed or solid:</strong> \(>\) doesn't include the line, so it's dashed. <strong>Side:</strong> \(y>\ldots\) means the points <em>above</em> the line.</p>
+      <p>A shades below. Quick test point: \((0,0)\) gives \(0>1\), which is false, so the origin must <em>not</em> be shaded. Only B passes.</p>` },
+
+  { skill: "Functions", key: "D",
+    stem: String.raw`<p>Given the function \(f(x)=2x^{2}-5\), what is the value of \(f(-3)\)?</p>`,
+    choices: [String.raw`\(-23\)`, String.raw`\(-11\)`, String.raw`\(7\)`, String.raw`\(13\)`],
+    explain: String.raw`<p>\(f(-3)=2(-3)^2-5=2(9)-5=13\).</p>
+      <p>A treats \((-3)^2\) as \(-9\). B forgets to square. C squares by doubling: \((-3)^2\) is not 6.</p>` },
+
+  { skill: "Functions", key: "A",
+    stem: String.raw`<p>What is the domain of the set of ordered pairs \((-6,3)\), \((-2,-4)\), \((0,5)\), \((3,-1)\), and \((7,2)\)?</p>`,
+    choices: [String.raw`\(\{-6,-2,0,3,7\}\)`, String.raw`\(\{-4,-1,2,3,5\}\)`, String.raw`\(\{-6,-4,-2,-1,0\}\)`, String.raw`\(\{0,2,3,5,7\}\)`],
+    explain: String.raw`<p>The domain is the set of <strong>first</strong> coordinates (the \(x\)-values): \(\{-6,-2,0,3,7\}\).</p>
+      <p>B is the range (the \(y\)-values). C and D are the five smallest and the five largest of all the numbers.</p>` },
+
+  { skill: "Lines and slope", key: "A",
+    stem: String.raw`<p>The equation of a certain line in the standard \((x,y)\) coordinate plane is \(y=-\frac{3}{5}x+2\). Which of the following is the slope of a line parallel to this line?</p>`,
+    choices: [String.raw`\(-\frac{3}{5}\)`, String.raw`\(\frac{3}{5}\)`, String.raw`\(\frac{5}{3}\)`, String.raw`\(2\)`],
+    explain: String.raw`<p>Parallel lines have the <em>same</em> slope. In \(y=mx+b\), the slope is \(m=-\frac{3}{5}\).</p>
+      <p>C is the perpendicular slope (flip and change the sign). D is the \(y\)-intercept. B drops the sign.</p>` },
+
+  { skill: "Systems of equations", key: "C",
+    stem: String.raw`<p>A linear equation and a quadratic equation are graphed in the standard \((x,y)\) coordinate plane below. Four points are labeled \(A\), \(B\), \(C\), and \(D\). One of these points represents a solution to the system of equations. Which one?</p>
+      <img src="figures/0011-q14.svg" alt="A line and a parabola. A is the parabola's lowest point, B is where the line crosses the y-axis, C is where the line and parabola cross, D is where the parabola crosses the x-axis." style="max-width:320px">`,
+    choices: [String.raw`\(A\)`, String.raw`\(B\)`, String.raw`\(C\)`, String.raw`\(D\)`],
+    explain: String.raw`<p>A solution to a system makes <em>both</em> equations true, so on a graph it's where the two graphs <strong>cross</strong>. Only \(C\) is on both the line and the parabola.</p>
+      <p>\(A\) is the parabola's vertex, \(B\) is the line's \(y\)-intercept, and \(D\) is the parabola's \(x\)-intercept. Each is on only one graph.</p>` },
+
+  { skill: "Probability", key: "D",
+    stem: String.raw`<p>What is the probability that a number randomly selected from the following set will be a solution to the inequality \(3x+2\le 11\)?</p>
+      <p>\(\{-4,-3,-2,-1,0,1,2,3,4\}\)</p>`,
+    choices: [String.raw`\(\frac{1}{9}\)`, String.raw`\(\frac{2}{9}\)`, String.raw`\(\frac{7}{9}\)`, String.raw`\(\frac{8}{9}\)`],
+    explain: String.raw`<p>Solve: \(3x+2\le 11\Rightarrow 3x\le 9\Rightarrow x\le 3\). From \(-4\) up to \(3\) is 8 of the 9 numbers, so the probability is \(\frac{8}{9}\).</p>
+      <p>C forgets that "\(\le\)" includes 3. A and B count the wrong side (\(x>3\) and \(x\ge 3\)).</p>` },
+
+  { skill: "Statistics", key: "D",
+    stem: String.raw`<p>Two data sets, \(P\) and \(Q\), are represented by the boxplots below.</p>
+      <img src="figures/0011-q16.svg" alt="Boxplots. P: minimum 6, first quartile 12, median 20, third quartile 26, maximum 38. Q: minimum 2, first quartile 14, median 18, third quartile 30, maximum 34." style="max-width:430px">
+      <p>One of the following statements about the \(2\) data sets is true. Which one?</p>`,
+    choices: [String.raw`The median of data set \(P\) is less than the median of data set \(Q\).`, String.raw`The maximum of data set \(Q\) is greater than the maximum of data set \(P\).`, String.raw`The \(1\)st quartile of data set \(P\) is greater than the \(1\)st quartile of data set \(Q\).`, String.raw`The range of data set \(P\) is equal to the range of data set \(Q\).`],
+    explain: String.raw`<p>Read the five numbers off each plot. \(P\): 6, 12, 20, 26, 38. \(Q\): 2, 14, 18, 30, 34. (Small ticks are every 2.)</p>
+      <ul><li>Medians (the line inside each box): \(P\) is 20 and \(Q\) is 18, so A is false.</li>
+      <li>Maximums (right whiskers): 38 vs 34, so B is false.</li>
+      <li>1st quartiles (left edges of the boxes): 12 vs 14, so C is false.</li>
+      <li>Ranges (max − min): \(38-6=32\) and \(34-2=32\). Equal, so D is true.</li></ul>` },
+
+  { skill: "Solving equations", key: "C",
+    stem: String.raw`<p>What value of \(n\) is the solution to the equation \(2+6(n-1)=15-2n\)?</p>`,
+    choices: [String.raw`\(\frac{7}{4}\)`, String.raw`\(\frac{23}{10}\)`, String.raw`\(\frac{19}{8}\)`, String.raw`\(\frac{19}{4}\)`],
+    explain: String.raw`<p>\[2+6n-6=15-2n\]\[6n-4=15-2n\]\[8n=19\quad\Rightarrow\quad n=\tfrac{19}{8}\]</p>
+      <p>A distributes the 6 to the \(n\) but not the 1. B adds \(2+6\) first, before multiplying. D subtracts \(2n\) instead of adding it when moving it across.</p>` },
+
+  { skill: "Lines and slope", key: "B",
+    stem: String.raw`<p>Which of the following is a linear equation?</p>`,
+    choices: [String.raw`\(y=\frac{4}{x}+1\)`, String.raw`\(y=-\frac{2}{5}x+7\)`, String.raw`\(y=2^{x}\)`, String.raw`\(x^{2}+y^{2}=16\)`],
+    explain: String.raw`<p>A linear equation fits the form \(y=mx+b\): \(x\) to the first power only, not under a root, not in a denominator, not as an exponent. B fits, with \(m=-\frac{2}{5}\) and \(b=7\).</p>
+      <p>A has \(x\) in a denominator, C has \(x\) as an exponent, and D is a circle.</p>` },
+
+  { skill: "Rates and proportions", key: "B",
+    stem: String.raw`<p>A solid aluminum block has a density of \(2.7\) grams per cubic centimeter and a volume of \(15.0\) cubic centimeters. A solid tin block has a density of \(7.3\) grams per cubic centimeter. The masses of both blocks are equal. The density of each block is equal to its mass divided by its volume. To the nearest \(0.1\) cubic centimeter, what is the volume of the tin block?</p>`,
+    choices: [String.raw`\(2.1\)`, String.raw`\(5.5\)`, String.raw`\(10.4\)`, String.raw`\(40.6\)`],
+    explain: String.raw`<p>First find the shared mass. Density = mass ÷ volume, so mass = density × volume = \(2.7\times 15.0=40.5\) g.</p>
+      <p>Tin volume = mass ÷ density = \(40.5\div 7.3\approx 5.548\), which rounds to \(5.5\) cm³. A sense check: tin is denser, so the same mass takes up <em>less</em> room than 15.</p>
+      <p>A divides the volume, not the mass, by 7.3. C subtracts the densities. D multiplies by the ratio upside down.</p>` },
+
+  { skill: "Angles and parallel lines", key: "C",
+    stem: String.raw`<p>In the figure below, transversal \(\overleftrightarrow{EF}\) intersects parallel lines \(\overleftrightarrow{AB}\) and \(\overleftrightarrow{CD}\) at \(P\) and \(Q\), such that \(m\angle DQE=65^\circ\) and \(m\angle BPF=(6x-5)^\circ\). What is the value of \(x\)?</p>
+      <img src="figures/0011-q20.svg" alt="Parallel lines AB (top) and CD (bottom) cut by transversal EF at P and Q. The 65 degree angle is at Q, above line CD on the right of the transversal. The (6x minus 5) degree angle is at P, below line AB on the right of the transversal." style="max-width:340px">`,
+    choices: [String.raw`\(\frac{35}{3}\)`, String.raw`\(\frac{55}{3}\)`, String.raw`\(20\)`, String.raw`\(\frac{185}{6}\)`],
+    explain: String.raw`<p>Both marked angles are between the parallel lines and on the same (right) side of the transversal. Same-side interior angles add to \(180^\circ\):</p>
+      <p>\[6x-5=180-65=115\quad\Rightarrow\quad 6x=120\quad\Rightarrow\quad x=20\]</p>
+      <p>A sets the angles equal: \(6x-5=65\). B gets the sign wrong: \(6x+5=115\). D sets \(6x-5=180\).</p>
+      <p>Quick check: one angle is acute and the other is obtuse, so they can't be equal. They must add to 180.</p>` },
+
+  { skill: "Patterns", key: "D",
+    stem: String.raw`<p>The table lists the remainder when each of \(8\) numbers is divided by \(10\).</p>
+      <table><tr><th>Number</th><td>\(3^1\)</td><td>\(3^2\)</td><td>\(3^3\)</td><td>\(3^4\)</td><td>\(3^5\)</td><td>\(3^6\)</td><td>\(3^7\)</td><td>\(3^8\)</td></tr>
+      <tr><th>Remainder</th><td>\(3\)</td><td>\(9\)</td><td>\(7\)</td><td>\(1\)</td><td>\(3\)</td><td>\(9\)</td><td>\(7\)</td><td>\(1\)</td></tr></table>
+      <p>What is the remainder when \(3^{102}\) is divided by \(10\)?</p>`,
+    choices: [String.raw`\(1\)`, String.raw`\(3\)`, String.raw`\(7\)`, String.raw`\(9\)`],
+    explain: String.raw`<p>The remainders repeat in a cycle of 4: 3, 9, 7, 1. To find where \(3^{102}\) lands, divide the exponent by 4: \(102=4\times 25+2\), remainder 2.</p>
+      <p>Remainder 2 means the 2nd number in the cycle, which is 9 (the same as \(3^2\), \(3^6\), …).</p>
+      <p>Off-by-one slips give 3 or 7. Check yourself with \(3^8\): \(8\div 4\) leaves remainder 0, which means the <em>last</em> number in the cycle, 1. ✓</p>` },
+
+  { skill: "Manipulations", key: "C",
+    stem: String.raw`<p>Given that \(p=6\) and the value of \(r\) is \(1.5\) times the value of \(p\), what is the sum of \(p\) and \(r\)?</p>`,
+    choices: [String.raw`\(7.5\)`, String.raw`\(9\)`, String.raw`\(15\)`, String.raw`\(54\)`],
+    explain: String.raw`<p>\(r=1.5\times 6=9\), so \(p+r=6+9=15\).</p>
+      <p>A adds 1.5 instead of multiplying. B stops at \(r\). D multiplies \(p\) and \(r\) instead of adding them.</p>` },
+
+  { skill: "Lines and slope", key: "A", grid: true,
+    stem: String.raw`<p>Each of the following lines in the standard \((x,y)\) coordinate plane passes through \(2\) points labeled with coordinates. Which of these lines has a slope less than \(2\) and a \(y\)-intercept greater than \(3\)?</p>`,
+    choices: [`<img src="figures/0011-q23a.svg" alt="Line through (0, 5) and (2, 8)">`, `<img src="figures/0011-q23b.svg" alt="Line through (0, 2) and (2, 5)">`, `<img src="figures/0011-q23c.svg" alt="Line through (0, 4) and (1, 7)">`, `<img src="figures/0011-q23d.svg" alt="Line through (0, 6) and (3, 12)">`],
+    explain: String.raw`<p>For each line, the point with \(x=0\) gives the \(y\)-intercept, and slope = rise ÷ run.</p>
+      <ul><li>A: intercept 5, slope \(\frac{8-5}{2-0}=1.5\). Both conditions hold. ✓</li>
+      <li>B: slope 1.5, but intercept 2 is not greater than 3.</li>
+      <li>C: intercept 4, but slope \(\frac{7-4}{1}=3\) is too steep.</li>
+      <li>D: intercept 6, slope \(\frac{12-6}{3}=2\). "Less than 2" excludes 2 itself.</li></ul>` },
+
+  { skill: "Statistics", key: "B",
+    stem: String.raw`<p>A total of \(60\) students were asked whether they play a musical instrument and whether they are on a sports team. Of the \(60\) students, \(34\) play an instrument. Of the \(25\) students who are on a sports team, \(9\) do not play an instrument. The given information is summarized in the table.</p>
+      <table><tr><th></th><th>On a team</th><th>Not on a team</th><th>Total</th></tr>
+      <tr><th>Play an instrument</th><td>?</td><td>?</td><td>\(34\)</td></tr>
+      <tr><th>Do not play</th><td>\(9\)</td><td>?</td><td>?</td></tr>
+      <tr><th>Total</th><td>\(25\)</td><td>?</td><td>\(60\)</td></tr></table>
+      <p>Of the students who are <strong>not</strong> on a sports team, how many play an instrument?</p>`,
+    choices: [String.raw`\(16\)`, String.raw`\(18\)`, String.raw`\(25\)`, String.raw`\(26\)`],
+    explain: String.raw`<p>Fill the "On a team" column first: \(25-9=16\) team members play. Then go across the "Play an instrument" row: \(34-16=18\) non-team students play.</p>
+      <p>A is the team players. C subtracts the 9 from the instrument total. D is the non-team total \(60-25=35\), minus 9.</p>` },
+
+  { skill: "Quadratics", key: "A",
+    stem: String.raw`<p>What are the \(x\)-intercepts of the graph of \(y=x^{2}+3x-28\) in the standard \((x,y)\) coordinate plane?</p>`,
+    choices: [String.raw`\(-7\) and \(4\)`, String.raw`\(-4\) and \(7\)`, String.raw`\(2\) and \(14\)`, String.raw`\(3\) and \(28\)`],
+    explain: String.raw`<p>Find two numbers that multiply to \(-28\) and add to \(3\): \(7\) and \(-4\). So \(y=(x+7)(x-4)\), which is zero at \(x=-7\) and \(x=4\).</p>
+      <p>B uses the numbers from the factors without flipping their signs. C is a factor pair of 28 that doesn't add to 3. D just reads off the coefficients.</p>
+      <p>Check: \((-7)^2+3(-7)-28=49-21-28=0\). ✓</p>` },
+
+  { skill: "Unit conversion", key: "C",
+    stem: String.raw`<p>A cyclist rides at a speed of \(18\) miles per hour. What is this speed in feet per minute?</p>
+      <p>(Note: \(1\) mile \(=5{,}280\) feet)</p>`,
+    choices: [String.raw`\(0.3\)`, String.raw`\(88\)`, String.raw`\(1{,}584\)`, String.raw`\(95{,}040\)`],
+    explain: String.raw`<p>\[\frac{18\text{ mi}}{1\text{ hr}}\times\frac{5{,}280\text{ ft}}{1\text{ mi}}\times\frac{1\text{ hr}}{60\text{ min}}=\frac{18\times 5{,}280}{60}=1{,}584\text{ ft/min}\]</p>
+      <p>A is miles per minute. B is the feet in one mile per minute (\(5{,}280\div 60\)), without the 18. D is feet per <em>hour</em>.</p>` },
+
+  { skill: "Systems of equations", key: "B",
+    stem: String.raw`<p>What is the \(y\)-value of the solution to the given system of equations?</p>
+      <p>\(-3x+2y=5\)<br>\(3x+2y=13\)</p>`,
+    choices: [String.raw`\(1\frac{1}{3}\)`, String.raw`\(4\frac{1}{2}\)`, String.raw`\(9\)`, String.raw`\(18\)`],
+    explain: String.raw`<p>Add the equations. The \(x\) terms cancel: \(4y=18\), so \(y=4\frac{1}{2}\).</p>
+      <p>D stops at \(4y=18\). C divides by 2 instead of 4. A is the \(x\)-value: \(3x+9=13\) gives \(x=\frac{4}{3}\).</p>` },
+
+  { skill: "Statistics", key: "C",
+    stem: String.raw`<p>The scatterplot shows the distances, in miles (\(x\)), and the fares, in dollars (\(y\)), of \(12\) taxi rides. One of the following is a linear equation of the line of best fit for these data. Which one?</p>
+      <img src="figures/0011-q28.svg" alt="Scatterplot rising from about (2, 10) to about (16, 40)" style="max-width:400px">`,
+    choices: [String.raw`\(y=x\)`, String.raw`\(y=0.8x+15\)`, String.raw`\(y=2.4x+4\)`, String.raw`\(y=4x+10\)`],
+    explain: String.raw`<p>Test each line at both ends of the data. The points start near \((2,10)\) and end near \((16,40)\).</p>
+      <ul><li>C: \(2.4(2)+4=8.8\) and \(2.4(16)+4=42.4\). Close to both. ✓</li>
+      <li>B: \(16.6\) and \(27.8\). Too high on the left and too low on the right, because it's too flat.</li>
+      <li>D: \(18\) and \(74\). Far too steep.</li>
+      <li>A: \(2\) and \(16\). Far below every point.</li></ul>
+      <p>The slope is about \(\frac{40-10}{16-2}\approx 2.1\) dollars per mile, and C is the only choice near that.</p>` },
+
+  { skill: "Manipulations", key: "B",
+    stem: String.raw`<p>Maya is practicing free throws. She made \(6\) of her first \(20\) shots. She then made every shot she took after her first \(20\) shots. At the end of practice, Maya had made \(\frac{3}{5}\) of all her shots. How many shots did Maya take after her first \(20\) shots?</p>`,
+    choices: [String.raw`\(12\)`, String.raw`\(15\)`, String.raw`\(21\)`, String.raw`\(35\)`],
+    explain: String.raw`<p>Let \(n\) be the shots after the first 20. She makes all of them, so made \(=6+n\) and taken \(=20+n\):</p>
+      <p>\[\frac{6+n}{20+n}=\frac{3}{5}\;\Rightarrow\;5(6+n)=3(20+n)\;\Rightarrow\;30+5n=60+3n\;\Rightarrow\;n=15\]</p>
+      <p>Check: she made \(21\) of \(35\), and \(\frac{21}{35}=\frac{3}{5}\). ✓ C and D are those totals, made and taken. A is \(\frac{3}{5}\) of 20.</p>` },
+
+  { skill: "Linear models", key: "B",
+    stem: String.raw`<p>A T-shirt company charges a fixed setup fee for \(1\) design and a fixed price per shirt with that design. The company charges a total of \(\$17\) for \(1\) design and \(3\) shirts and a total of \(\$29\) for \(1\) design and \(7\) shirts. What will the company charge, in total, for \(1\) design and \(10\) shirts?</p>`,
+    choices: [String.raw`\(\$30\)`, String.raw`\(\$38\)`, String.raw`\(\$40\)`, String.raw`\(\$46\)`],
+    explain: String.raw`<p>Going from 3 shirts to 7 shirts adds 4 shirts and \(\$29-\$17=\$12\), so each shirt costs \(\$3\). The setup fee is \(17-3(3)=\$8\).</p>
+      <p>For 10 shirts: \(8+3(10)=\$38\).</p>
+      <p>A forgets the setup fee. C rounds \(29\div 7\) to \(\$4\) a shirt, which counts the fee as part of every shirt. D adds the two bills.</p>` },
+
+  { skill: "Linear models", key: "B",
+    stem: String.raw`<p>The graph shows the total cost of \(1\) drink and different numbers of tacos at a food truck. One of the following amounts is the cost of \(3\) tacos with no drink. Which one?</p>
+      <img src="figures/0011-q31.svg" alt="Points at (0, 1.50), (1, 2.75), (2, 4.00), (3, 5.25), (4, 6.50), (5, 7.75)" style="max-width:340px">`,
+    choices: [String.raw`\(\$1.25\)`, String.raw`\(\$3.75\)`, String.raw`\(\$4.50\)`, String.raw`\(\$5.25\)`],
+    explain: String.raw`<p>At 0 tacos, the total is just the drink: \(\$1.50\). Each extra taco adds \(\$1.25\) (for example, from \(\$1.50\) to \(\$2.75\)).</p>
+      <p>Three tacos alone: \(3\times 1.25=\$3.75\). Or read the graph at 3 tacos (\(\$5.25\)) and subtract the drink.</p>
+      <p>D still includes the drink. A is one taco. C multiplies the drink price by 3.</p>` },
+
+  { skill: "Circles and distance", key: "D",
+    stem: String.raw`<p>In the standard \((x,y)\) coordinate plane, the point \((-5,13)\) is on the circle centered at the point \((3,-2)\). What is the radius of the circle?</p>`,
+    choices: [String.raw`\(7\)`, String.raw`\(8\)`, String.raw`\(13\)`, String.raw`\(17\)`],
+    explain: String.raw`<p>The radius is the distance from the center to the point. Across: \(3-(-5)=8\). Up: \(13-(-2)=15\).</p>
+      <p>\[r=\sqrt{8^2+15^2}=\sqrt{64+225}=\sqrt{289}=17\]</p>
+      <p>A subtracts the legs. B uses only the horizontal distance. C is the point's \(y\)-coordinate.</p>` },
+
+  { skill: "Area and perimeter", key: "C",
+    stem: String.raw`<p>The given \(12\)-sided figure is partitioned into \(5\) congruent squares. The total area of the figure is \(460\) square inches. Which of the following is closest to the perimeter of the figure, in inches?</p>
+      <img src="figures/0011-q33.svg" alt="A plus sign made of 5 congruent squares" style="max-width:170px">`,
+    choices: [String.raw`\(77\)`, String.raw`\(92\)`, String.raw`\(115\)`, String.raw`\(153\)`],
+    explain: String.raw`<p>One square: \(460\div 5=92\) square inches, so each side is \(\sqrt{92}\approx 9.59\) inches.</p>
+      <p>Count the outside edges. Each of the 4 arms shows 3 edges (its two sides and its end), so there are \(12\) edges, and the perimeter is \(12\times 9.59\approx 115\) inches.</p>
+      <p>B is the area of one square, not a length. A counts only 8 edges, and D counts 16.</p>` },
+
+  { skill: "Quadratics", key: "A",
+    stem: String.raw`<p>When the parabola represented by \(y=(x+4)(x-8)\) is graphed in the standard \((x,y)\) coordinate plane, what are the coordinates of the vertex?</p>`,
+    choices: [String.raw`\((2,-36)\)`, String.raw`\((4,-32)\)`, String.raw`\((6,-20)\)`, String.raw`\((8,0)\)`],
+    explain: String.raw`<p>The \(x\)-intercepts are \(-4\) and \(8\). The vertex sits halfway between them: \(x=\frac{-4+8}{2}=2\).</p>
+      <p>Plug in: \(y=(2+4)(2-8)=6(-6)=-36\). The vertex is \((2,-36)\).</p>
+      <p>B uses half of 8. C averages \(4\) and \(8\), ignoring the sign of \(-4\). D is an \(x\)-intercept, not the vertex.</p>` },
+], { minutes: 45, checkpoints: [{ question: 12, minute: 15 }, { question: 23, minute: 30 }] });
+</script>
+
+<div class="callout">
+  <strong>After grading, with your student.</strong> Look at the results table first. A cluster of misses in one skill points to a lesson; misses spread across the last third of the test usually point to pacing. Then redo each missed question <em>without</em> looking at the explanation, and only open it if you're stuck. That second, effortful attempt is the one that makes the skill stick.
+</div>
+
+<footer class="next">
+  <p><strong>Take the original:</strong> ACT's free practice test is at <a href="https://tn.preact.actonline.act.org/client/index.html">tn.preact.actonline.act.org</a>. Choose <em>Practice Tests → PreACT 9 Secure Practice Tests → Mathematics</em>; no login is needed. For timings and test-day rules, read <a href="https://www.act.org/content/act/en/products-and-services/preact/resources/preparing-for-preact9-secure.html">ACT, Preparing for PreACT 9 Secure</a>.</p>
+  <p><strong>Stuck or curious?</strong> Ask me anything, like "why do same-side interior angles add to 180?" or "make me five more questions like number 21". I'm your teacher here.</p>
+  <p>Next: <a href="0003-finish-every-section.html">Lesson 3 · Finish every section →</a> · <a href="../reference/study-plan.html">Study plan</a></p>
+</footer>
+</body>
+</html>
